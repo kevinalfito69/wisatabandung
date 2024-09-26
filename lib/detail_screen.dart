@@ -11,15 +11,6 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              tooltip: "Back",
-              icon: const Icon(Icons.arrow_back)),
-          title: const Text("Back"),
-        ),
         body: SafeArea(
             child: SingleChildScrollView(
                 child: Column(
