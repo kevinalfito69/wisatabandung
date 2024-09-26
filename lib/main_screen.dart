@@ -23,13 +23,15 @@ class MainScreen extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                    flex: 1,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(place.imageAsset),
-                    )),
-                 Expanded(
+                    Expanded(
+                        flex: 1,
+                        child:ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Hero(
+                                tag: place.name,
+                                child: Image.asset(place.imageAsset),
+                            ))),
+                    Expanded(
                   flex: 2,
                   child: Padding(
                       padding: EdgeInsets.all(8.0),
